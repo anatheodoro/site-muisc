@@ -3,14 +3,14 @@
 @import url(styles/carrossel.css);
 
 :root {
---cor-de-fundo: #4db45e;
+--cor-de-fundo: #4b0969;
 --branco: #FFFFFF;
---preto: #0f0f0f;
+--roxin: #9900ff;
 font-family: 'Montserrat', sans-serif;
 }
 
 body {
-background-color: var(--preto);
+background-color: var(--roxin);
 font-family: 'Montserrat', sans-serif;
 font-size: 16px;
 font-weight: 400;
