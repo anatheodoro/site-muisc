@@ -1,19 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-    <img src="MusicPlay logo.png" alt="MusicPlay">
-        <ul>
-            <li>conta</li>
-            <li>cadastrar-se</li>
-        </ul>
-    </header>   
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Music Ana</title>
+<link rel="stylesheet" href="reset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="styles.css">
+
+<body>  
+<header class="cabecalho">
+            <div class="container">
+            <input type="checkbox" id="menu" class="container-botao">
+            <label for="menu">
+            <span class="menu-hamburguer container-imagem"></span>
+            </label>
+            <ul class="lista-menu">
+            <li class="lista-menu-titulo">CATEGORIAS</li> 
+            <li class="lista-menu-item">
+            <a href="#" class="lista-menu-link">Novidades</a>
+            </li>
+            <li class="lista-menu-item">
+            <a href="#" class="lista-menu-link">Tudo</a>
+            </li>
+            <li class="lista-menu-item">
+            <a href="#" class="lista-menu-link">Playlist</a>
+            </li>
+            <li class="lista-menu-item">
+            <a href="#" class="lista-menu-link">Álbuns</a>
+            </li>
+            </ul>
+            <img class="capaana" src="img/ana.png" alt="capa">
+            </div>
+            <div class="container">
+                <a href="#"><img src="img/Favorite.svg" alt="Favorite" class="container-imagem"></a> 
+                <a href="#"><img src="img/Usuários.svg" alt="Usuários" class="container-imagem"></a>
+                <a href="#"><img src="img/Compras.svg" alt="compras" class="container-imagem"></a> 
+            </div>
+</header>
+
+    <section class="banner">
+            <h2 class="banner__titulo">Music Ana</h2>
+            <p class="banner__texto">O melhor da música</p>
+            <input type="search" class="banner__pesquisa" placeholder="Encontre sua música">
+    </section>
+    <section class="carrossel">
+            <h2 class="carrossel-titulo">Os maiores hits do momento</h2>
+                        <!-- Slider main container -->
+            <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/collide.PNG" alt="msc1"></div>
+            <div class="swiper-slide"><img src="img/daylight.PNG" alt="msc2"></div>
+            <div class="swiper-slide"><img src="img/starboy.PNG" alt="msc3"></div>
+            <div class="swiper-slide"><img src="img/those eyes.PNG" alt="msc4"></div>
+
+            ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                }, 
+                });     
+    </script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+@import url(styles/header.css);
+@import url(styles/banner.css);
+@import url(styles/carrossel.css);
+
+:root {
+--cor-de-fundo: #4db45e;
+--branco: #FFFFFF;
+--preto: #0f0f0f;
+font-family: 'Montserrat', sans-serif;
+}
+
+body {
+background-color: var(--preto);
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-weight: 400;
+}
+
+.capaana {
+width: 45%;
+}
